@@ -1,0 +1,11 @@
+define view ZS_JOIN1 as select from  vbak as a
+left outer join  vbap as b
+    on  a.vbeln =  b.vbeln {
+key a.vbeln,
+    a.erdat,
+    a.ernam,
+    a.kunnr,
+    b.charg,
+    b.matnr,
+    b.matwa
+}
